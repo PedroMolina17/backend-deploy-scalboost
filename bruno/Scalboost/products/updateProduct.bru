@@ -1,0 +1,23 @@
+meta {
+  name: updateProduct
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/products/29
+  body: multipartForm
+  auth: none
+}
+
+body:json {
+  {"description":"zzazz"}
+}
+
+body:multipart-form {
+  description: vccccccccccccx
+  precio: 15
+  id_category: 1
+  ~fecha: 2024-01-28T02:12:10.615Z
+  ~image_url: @file(C:\Users\Usuario\Downloads\271818259_333716071912793_2636202956461382732_n.jpg)
+}
